@@ -11,11 +11,9 @@ function SaveClient(e){
         name: inpunts[0].value,
         email: inpunts[1].value,
         address: inpunts[2].value,
-        createAd: new Date().toISOString().split('T')[0],
+        createAd: new Date().toISOString(),
         user: localStorage.getItem('name')
     }
-
-    console.log(cliente)
 
     const url = 'http://localhost:3004/customer'
 

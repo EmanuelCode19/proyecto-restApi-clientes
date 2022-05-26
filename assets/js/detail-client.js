@@ -18,7 +18,7 @@ window.addEventListener("load" , e => {
     <p class="color-black cliente-info"> <span>Nombre:</span>  ${cliente.name}</p>
     <p class="color-black cliente-info"><span>Email:</span>  ${cliente.email}</p>
     <p class="color-black cliente-info"><span>Direccion:</span>  ${cliente.address}</p>
-    <p class="color-black cliente-info"><span>Fecha de Creacion:</span>  ${cliente.createAd}</p>
+    <p class="color-black cliente-info"><span>Fecha de Creacion:</span>${new Date(cliente.createAd).toISOString().split('T')[0]}</p>
     <p class="color-black cliente-info"><span>Creado Por:</span>  ${cliente.user}</p>
 
      `;

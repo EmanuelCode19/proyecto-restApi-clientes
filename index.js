@@ -23,6 +23,14 @@ app.get('/verCliente',function(req, res){
     res.sendFile(__dirname + "/views/verCliente.html")
 })
 
+app.get('/editarCliente',function(req, res){
+    res.sendFile(__dirname + "/views/editarCliente.html")
+})
+
+app.get('/actualizarCliente',function(req, res){
+    res.sendFile(__dirname + "/views/actualizarCliente.html")
+})
+
 app.listen(3000)
 console.log('express esta corriendo en el port 3000')
 console.log('https://localhost:3000.com')

@@ -68,12 +68,12 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 70rem;
+    min-height: 25rem;
     position: relative;
 }
 
 .header-height{
-    min-height: 35rem;
+    min-height: 70rem;
 }
 .header::before {
     content: '';
@@ -217,7 +217,7 @@ font-size: 1.5rem;
 .flex-end{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 }
 @media (min-width: 768px){

@@ -9,8 +9,6 @@ async function listAPI() {
 
     const data = await response.json();
 
-    console.log(data)
-
     loadData(data)
 }
 
@@ -19,19 +17,64 @@ function loadData(data){
       const tr = document.createElement('tr');
       const link = document.createElement('a')
       link.href=`verCliente?id=${element.id}`
-      const id = link.href;
+       link.classList.add('btn','btn-primary')
+       link.textContent = 'Detalles'
+      const linkUpdate = document.createElement('a')
+      linkUpdate.classList.add('btn','btn-warning')
+      linkUpdate.href=`editarCliente?id=${element.id}`
+      linkUpdate.textContent="Actualizar"
+      const buton = document.createElement('button')
+      buton.classList.add('btn','btn-danger')
+      buton.textContent = 'borrar'
+      eventBorrar(buton,element)
       tr.classList.add('background-hover')
-      
     tr.innerHTML =`
     <th scope="row">${element.id}</th>
     <td>${element.name}</td>
     <td>${element.email}</td>
     <td>${element.address}</td>
-    <td>${element.createAd} <a href="${id}"class="btn btn-primary">open</a></td>
+    <td>${new Date(element.createAd).toISOString().split('T')[0]}</td>
      `;
-     
-    
+     const td = document.createElement('td');
+     const td1 = document.createElement('td');
+     const td2 = document.createElement('td');
+     td.appendChild(link)
+     td1.appendChild(linkUpdate)
+     td2.appendChild(buton)
+     tr.appendChild(td)
+     tr.appendChild(td1)
+     tr.appendChild(td2)
       list.appendChild(tr)
+
     });
 }
+
+function eventBorrar(buton,cliente){
+      buton.addEventListener('click',() => {
+        if(confirm(`Seguro Desea Borrar el cliente ${cliente.name}`)){
+          const url = `http://localhost:3004/customer/${cliente.id}`
+
+        const header = {
+            'Content-Type': 'application/json'
+        }
+         const configuration = {
+              method:"DELETE",
+              body:JSON.stringify(cliente),
+              headers: header
+         }
+    
+       fetch(url,configuration).then(response => response.json()).then(() => window.location.reload())
+        }
+      })
+}
+
+
+
+
+
+
+
+
+   
+   
 

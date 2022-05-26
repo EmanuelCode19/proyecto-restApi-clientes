@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = document.createElement('a');
     link.href=`login`;
     link.textContent=`cerrar session`
-    link.classList.add('logout')
+    link.classList.add('logout','btn','btn-danger')
 
     divUser.classList.add('flex-end')
 
@@ -35,9 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
         divUser.innerHTML =`
     <p> usuario desconetado 🔴</p> 
     `;
+
+    window.location.replace('http://localhost:3000/login')
     }
+
    
 })
+
 
 
 
