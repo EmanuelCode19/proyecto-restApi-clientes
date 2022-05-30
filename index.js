@@ -27,9 +27,22 @@ app.get('/editarCliente',function(req, res){
     res.sendFile(__dirname + "/views/editarCliente.html")
 })
 
-app.get('/actualizarCliente',function(req, res){
-    res.sendFile(__dirname + "/views/actualizarCliente.html")
+app.get('/interaciones',function(req, res){
+    res.sendFile(__dirname + "/views/interaciones.html")
 })
+
+app.get('/usuario',function(req, res){
+    res.sendFile(__dirname + "/views/usuario.html")
+})
+
+app.get('/update',function(req, res){
+    res.sendFile(__dirname + "/views/updateUser.html")
+})
+
+app.get('/new',function(req, res){
+    res.sendFile(__dirname + "/views/newUser.html")
+})
+
 
 app.listen(3000)
 console.log('express esta corriendo en el port 3000')

@@ -18,46 +18,23 @@
   },
   "user": [
     {
-      "id": 1,
-      "user": "emanuel19",
-      "password": "itla.json*",
-      "first_name": "Cyrus",
-      "last_name": "Rooson",
-      "email": "crooson0@altervista.org"
-    },
-    {
       "id": 2,
-      "user": "Blakelee",
-      "password": "cgvFzfqiDF",
-      "first_name": "Jeffry",
-      "last_name": "Bengoechea",
-      "email": "jbengoechea1@auda.org.au"
+      "name": "alvin",
+      "apellido": "javier",
+      "email": "alvinJavier@gmail.com",
+      "user": "Ajavier",
+      "password": "123456"
     },
     {
-      "id": 3,
-      "user": "Gale",
-      "password": "XvVXyCi8iM",
-      "first_name": "Rosalinda",
-      "last_name": "Gillopp",
-      "email": "rgillopp2@archive.org"
+      "name": "EMANUEL",
+      "apellido": "de jesus santana",
+      "email": "ntimmermann0@hubpages.com",
+      "user": "emanuel19",
+      "password": "12345678",
+      "id": 3
     }
   ],
   "customer": [
-    {
-      "id": 1,
-      "name": "eriberto",
-      "email": "ntimmermann0@hubpages.com",
-      "address": "China",
-      "createAd": "2022-05-26T22:00:40.040Z",
-      "user": "emanuel19"
-    },
-    {
-      "id": 2,
-      "name": "Brion",
-      "email": "bipsley1@stumbleupon.com",
-      "address": "Ecuador",
-      "createAd": "2021/07/31"
-    },
     {
       "id": 3,
       "name": "Jackelyn",
@@ -319,27 +296,290 @@
       "createAd": "2021/07/25"
     },
     {
-      "id": 40,
-      "name": "Crichton",
-      "email": "cdunkerly13@blogspot.com",
-      "address": "Canada",
-      "createAd": "2021/12/21"
+      "name": "juan",
+      "email": "juan@gmail.com",
+      "address": "Republica Dominicana",
+      "createAd": "2022-05-30T20:52:17.432Z",
+      "user": "Ajavier",
+      "id": 40
+    }
+  ],
+  "interacion": [
+    {
+      "name": "eriberto",
+      "note": "nota",
+      "createAd": "2022-05-27T18:24:32.590Z",
+      "user": {
+        "id": 1,
+        "user": "emanuel19",
+        "password": "itla.json*",
+        "first_name": "Cyrus",
+        "last_name": "Rooson",
+        "email": "crooson0@altervista.org"
+      },
+      "costumer": {
+        "id": 1,
+        "name": "eriberto",
+        "email": "ntimmermann0@hubpages.com",
+        "address": "China",
+        "createAd": "2022-05-26T22:00:40.040Z",
+        "user": "emanuel19"
+      },
+      "id": 2
     },
     {
-      "id": 41,
-      "name": "EMANUEL DE JESUS",
-      "email": "jaj@manuel.com",
-      "address": "Republica Dominicana",
-      "createAd": "2022-05-26T22:43:08.906Z",
-      "user": "emanuel19"
+      "note": "estudiante paul reyes ",
+      "createAd": "2022-05-27T19:13:24.221Z",
+      "user": {
+        "id": 1,
+        "user": "emanuel19",
+        "password": "itla.json*",
+        "first_name": "Cyrus",
+        "last_name": "Rooson",
+        "email": "crooson0@altervista.org"
+      },
+      "costumer": {
+        "name": "Paul reyes",
+        "email": "jaj@manuel.com",
+        "address": "Republica Dominicana",
+        "createAd": "2022-05-26T22:57:27.041Z",
+        "user": "emanuel19",
+        "id": 42
+      },
+      "id": 3
+    },
+    {
+      "note": "nota",
+      "createAd": "2022-05-27T19:15:10.992Z",
+      "user": {
+        "id": 1,
+        "user": "emanuel19",
+        "password": "itla.json*",
+        "first_name": "Cyrus",
+        "last_name": "Rooson",
+        "email": "crooson0@altervista.org"
+      },
+      "costumer": {
+        "id": 40,
+        "name": "Crichton",
+        "email": "cdunkerly13@blogspot.com",
+        "address": "Canada",
+        "createAd": "2021/12/21"
+      },
+      "id": 4
     },
     {
       "name": "Paul reyes",
-      "email": "jaj@manuel.com",
-      "address": "Republica Dominicana",
-      "createAd": "2022-05-26T22:57:27.041Z",
-      "user": "emanuel19",
-      "id": 42
+      "note": "buenos dias",
+      "createAd": "2022-05-27T19:37:55.932Z",
+      "user": {
+        "id": 1,
+        "user": "emanuel19",
+        "password": "itla.json*",
+        "first_name": "Cyrus",
+        "last_name": "Rooson",
+        "email": "crooson0@altervista.org"
+      },
+      "costumer": {
+        "name": "Paul reyes",
+        "email": "jaj@manuel.com",
+        "address": "Republica Dominicana",
+        "createAd": "2022-05-26T22:57:27.041Z",
+        "user": "emanuel19",
+        "id": 42
+      },
+      "id": 5
+    },
+    {
+      "name": "Serena",
+      "note": "buenos dias, le recuerdo que debe pagar mañana",
+      "createAd": "2022-05-27T21:53:01.069Z",
+      "user": {
+        "id": 1,
+        "name": "emanuel",
+        "apellido": "de jesus santana",
+        "email": "emanuel@gmail.com",
+        "user": "emanuel19",
+        "password": "manuel123"
+      },
+      "costumer": {
+        "id": 35,
+        "name": "Serena",
+        "email": "smattersony@europa.eu",
+        "address": "Brazil",
+        "createAd": "2021/10/27"
+      },
+      "id": 6
+    },
+    {
+      "name": "Menard",
+      "note": "buenas debe pagar mañana",
+      "createAd": "2022-05-28T20:13:01.030Z",
+      "user": {
+        "id": 1,
+        "name": "emanuel",
+        "apellido": "de jesus santana",
+        "email": "emanuel@gmail.com",
+        "user": "emanuel19",
+        "password": "manuel123"
+      },
+      "costumer": {
+        "id": 4,
+        "name": "Menard",
+        "email": "mmcgettigan3@wordpress.com",
+        "address": "China",
+        "createAd": "2021/08/24"
+      },
+      "id": 7
+    },
+    {
+      "name": "Paul reyes mateo",
+      "note": "hola desde interaciones de mensajes",
+      "createAd": "2022-05-30T20:30:22.712Z",
+      "costumer": {
+        "id": 42,
+        "name": "Paul reyes mateo",
+        "email": "jaj@manuel.com",
+        "address": "Republica Dominicana",
+        "createAd": "2022-05-30T20:29:35.590Z",
+        "user": "emanuel19"
+      },
+      "id": 8
+    },
+    {
+      "name": "EMANUEL DE JESUS",
+      "note": "hey",
+      "createAd": "2022-05-30T20:37:39.007Z",
+      "costumer": {
+        "id": 41,
+        "name": "EMANUEL DE JESUS",
+        "email": "jaj@manuel.com",
+        "address": "Republica Dominicana",
+        "createAd": "2022-05-26T22:43:08.906Z",
+        "user": "emanuel19"
+      },
+      "id": 9
+    },
+    {
+      "name": "EMANUEL DE JESUS",
+      "note": "hola",
+      "createAd": "2022-05-30T20:40:39.065Z",
+      "costumer": {
+        "id": 41,
+        "name": "EMANUEL DE JESUS",
+        "email": "jaj@manuel.com",
+        "address": "Republica Dominicana",
+        "createAd": "2022-05-26T22:43:08.906Z",
+        "user": "emanuel19"
+      },
+      "id": 10
+    },
+    {
+      "name": "marcos adon",
+      "note": "juan",
+      "createAd": "2022-05-30T20:41:58.462Z",
+      "costumer": {
+        "name": "marcos adon",
+        "email": "mdumbletonz@bloglovin.com",
+        "address": "Poland",
+        "createAd": "2022-05-26T22:03:38.417Z",
+        "user": "emanuel19",
+        "id": 36
+      },
+      "id": 11
+    },
+    {
+      "name": "marcos adon",
+      "note": "j",
+      "createAd": "2022-05-30T20:42:07.369Z",
+      "costumer": {
+        "name": "marcos adon",
+        "email": "mdumbletonz@bloglovin.com",
+        "address": "Poland",
+        "createAd": "2022-05-26T22:03:38.417Z",
+        "user": "emanuel19",
+        "id": 36
+      },
+      "id": 12
+    },
+    {
+      "name": "marcos adon",
+      "note": "j",
+      "createAd": "2022-05-30T20:43:10.370Z",
+      "costumer": {
+        "name": "marcos adon",
+        "email": "mdumbletonz@bloglovin.com",
+        "address": "Poland",
+        "createAd": "2022-05-26T22:03:38.417Z",
+        "user": "emanuel19",
+        "id": 36
+      },
+      "id": 13
+    },
+    {
+      "name": "marcos adon",
+      "note": "juan",
+      "createAd": "2022-05-30T20:46:04.202Z",
+      "user": {
+        "id": 2,
+        "name": "alvin",
+        "apellido": "javier",
+        "email": "alvinJavier@gmail.com",
+        "user": "Ajavier",
+        "password": "123456"
+      },
+      "costumer": {
+        "name": "marcos adon",
+        "email": "mdumbletonz@bloglovin.com",
+        "address": "Poland",
+        "createAd": "2022-05-26T22:03:38.417Z",
+        "user": "emanuel19",
+        "id": 36
+      },
+      "id": 14
+    },
+    {
+      "name": "Letta",
+      "note": "oye",
+      "createAd": "2022-05-30T20:48:47.137Z",
+      "user": {
+        "id": 2,
+        "name": "alvin",
+        "apellido": "javier",
+        "email": "alvinJavier@gmail.com",
+        "user": "Ajavier",
+        "password": "123456"
+      },
+      "costumer": {
+        "id": 21,
+        "name": "Letta",
+        "email": "lsayrek@edublogs.org",
+        "address": "France",
+        "createAd": "2021/09/17"
+      },
+      "id": 15
+    },
+    {
+      "name": "juan",
+      "note": "hola juan",
+      "createAd": "2022-05-30T20:52:44.844Z",
+      "user": {
+        "id": 2,
+        "name": "alvin",
+        "apellido": "javier",
+        "email": "alvinJavier@gmail.com",
+        "user": "Ajavier",
+        "password": "123456"
+      },
+      "costumer": {
+        "name": "juan",
+        "email": "juan@gmail.com",
+        "address": "Republica Dominicana",
+        "createAd": "2022-05-30T20:52:17.432Z",
+        "user": "Ajavier",
+        "id": 40
+      },
+      "id": 16
     }
   ]
 }

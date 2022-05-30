@@ -116,7 +116,7 @@ img {
 .barra {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 @media (min-width:768px){
@@ -162,8 +162,8 @@ img {
 .contenido-principal {
     background-color: var(--blanco);
     padding: 10rem;
-    margin-top: -10rem;
-    position: relative;
+    /* margin-top: -10rem; */
+    /* position: absolute; */
 }
 .contenido-principal h2 {
     text-align: center;
@@ -254,4 +254,27 @@ border: 1px solid #222f3e;
 }
 .cliente-info span{
     font-weight: bold;
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    color: #ffffff;
+}
+.ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 200px;
+}
+
+.menu li:hover .ul{
+display: block;
+}
+
+.ul li:hover{
+    color: #ffffff;
 }
